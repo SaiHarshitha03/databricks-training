@@ -1,1 +1,194 @@
+**Query #41**
 
+| emp_id | name        | age | salary  | department_id | hire_date  | project_id | name | department_id |
+| ------ | ----------- | --- | ------- | ------------- | ---------- | ---------- | ---- | ------------- |
+| 8      | Frank White | 32  | 48000.0 |               | 2021-07-10 |            |      |               |
+
+**Query #42**
+
+
+| name        | COUNT(p.project_id) |
+| ----------- | ------------------- |
+| Alice Blue  | 2                   |
+| Bob Brown   | 3                   |
+| Charlie P.  | 1                   |
+| David Green | 2                   |
+| Eve Black   | 2                   |
+| Grace Kelly | 3                   |
+| Hannah Lee  | 2                   |
+| Jane Smith  | 1                   |
+| John Doe    | 3                   |
+
+**Query #43**
+
+There are no results to be displayed.
+
+**Query #44**
+
+
+| name        |
+| ----------- |
+| John Doe    |
+| Bob Brown   |
+| Grace Kelly |
+
+**Query #45**
+
+| name |
+| ---- |
+| IT   |
+
+**Query #46**
+
+| emp_id | name      | age | salary  | department_id | hire_date  |
+| ------ | --------- | --- | ------- | ------------- | ---------- |
+| 3      | Bob Brown | 45  | 80000.0 | 1             | 2018-02-12 |
+
+**Query #47**
+
+
+| emp_id | name        | age | salary  | department_id | hire_date  |
+| ------ | ----------- | --- | ------- | ------------- | ---------- |
+| 2      | Jane Smith  | 34  | 60000.0 | 2             | 2019-07-23 |
+| 3      | Bob Brown   | 45  | 80000.0 | 1             | 2018-02-12 |
+| 6      | David Green | 38  | 70000.0 | 4             | 2022-05-18 |
+| 9      | Grace Kelly | 27  | 65000.0 | 1             | 2018-11-13 |
+
+**Query #48**
+
+| salary  |
+| ------- |
+| 70000.0 |
+
+**Query #49**
+
+| department_id |
+| ------------- |
+| 1             |
+
+
+**Query #50**
+
+| emp_id | name        | age | salary  | department_id | hire_date  |
+| ------ | ----------- | --- | ------- | ------------- | ---------- |
+| 2      | Jane Smith  | 34  | 60000.0 | 2             | 2019-07-23 |
+| 3      | Bob Brown   | 45  | 80000.0 | 1             | 2018-02-12 |
+| 6      | David Green | 38  | 70000.0 | 4             | 2022-05-18 |
+| 7      | Eve Black   | 40  | 55000.0 | 3             | 2021-08-30 |
+
+
+**Query #51**
+
+| salary  |
+| ------- |
+| 65000.0 |
+
+**Query #52**
+
+| emp_id | name        | age | salary  | department_id | hire_date  |
+| ------ | ----------- | --- | ------- | ------------- | ---------- |
+| 3      | Bob Brown   | 45  | 80000.0 | 1             | 2018-02-12 |
+| 6      | David Green | 38  | 70000.0 | 4             | 2022-05-18 |
+| 7      | Eve Black   | 40  | 55000.0 | 3             | 2021-08-30 |
+
+**Query #53**
+
+
+| department_id |
+| ------------- |
+| 1             |
+| 4             |
+
+**Query #54**
+
+| emp_id | name        | age | salary  | department_id | hire_date  |
+| ------ | ----------- | --- | ------- | ------------- | ---------- |
+| 1      | John Doe    | 28  | 50000.0 | 1             | 2020-01-15 |
+| 3      | Bob Brown   | 45  | 80000.0 | 1             | 2018-02-12 |
+| 4      | Alice Blue  | 25  | 45000.0 | 3             | 2021-03-22 |
+| 6      | David Green | 38  | 70000.0 | 4             | 2022-05-18 |
+| 7      | Eve Black   | 40  | 55000.0 | 3             | 2021-08-30 |
+| 9      | Grace Kelly | 27  | 65000.0 | 1             | 2018-11-13 |
+| 10     | Hannah Lee  | 30  | 53000.0 | 4             | 2020-02-25 |
+
+**Query #55**
+
+| emp_id | name       | age | salary  | department_id | hire_date  |
+| ------ | ---------- | --- | ------- | ------------- | ---------- |
+| 2      | Jane Smith | 34  | 60000.0 | 2             | 2019-07-23 |
+
+**Query #56**
+
+| SUM(salary) |
+| ----------- |
+| 103000.0    |
+
+**Query #57**
+
+| department_id | avg_sal |
+| ------------- | ------- |
+| 1             | 65000.0 |
+| 4             | 61500.0 |
+| 2             | 55000.0 |
+| 3             | 50000.0 |
+|               | 48000.0 |
+
+**Query #58**
+
+| department_id |
+| ------------- |
+| 1             |
+| 4             |
+
+**Query #59**
+
+There are no results to be displayed.
+
+**Query #60**
+
+| department_id | emp_count | AVG(salary) |
+| ------------- | --------- | ----------- |
+| 1             | 3         | 65000.0     |
+
+**Query #61**
+
+| name        | salary  |
+| ----------- | ------- |
+| Jane Smith  | 60000.0 |
+| Bob Brown   | 80000.0 |
+| David Green | 70000.0 |
+| Eve Black   | 55000.0 |
+
+**Query #62**
+
+| emp_id | name      | age | salary  | department_id | hire_date  |
+| ------ | --------- | --- | ------- | ------------- | ---------- |
+| 3      | Bob Brown | 45  | 80000.0 | 1             | 2018-02-12 |
+
+**Query #63**
+
+
+| name      | COUNT(p.project_id) |
+| --------- | ------------------- |
+| HR        | 1                   |
+| Marketing | 2                   |
+| Finance   | 2                   |
+| IT        | 3                   |
+
+**Query #64**
+
+| emp_id | name        | age | salary  | department_id | hire_date  |
+| ------ | ----------- | --- | ------- | ------------- | ---------- |
+| 2      | Jane Smith  | 34  | 60000.0 | 2             | 2019-07-23 |
+| 3      | Bob Brown   | 45  | 80000.0 | 1             | 2018-02-12 |
+| 6      | David Green | 38  | 70000.0 | 4             | 2022-05-18 |
+| 7      | Eve Black   | 40  | 55000.0 | 3             | 2021-08-30 |
+
+**Query #65**
+
+| name        | salary  |
+| ----------- | ------- |
+| Jane Smith  | 60000.0 |
+| Bob Brown   | 80000.0 |
+| David Green | 70000.0 |
+| Eve Black   | 55000.0 |
