@@ -1,1 +1,58 @@
+1. Students and Courses
+Alice Johnson  - SQL Basics
+Bob Smith      - Python Fundamentals
+Charlie Brown  - SQL Basics
+Diana Prince   - Cloud Computing
+Ethan Hunt     - NULL
 
+2. Courses with No Enrollments
+Data Analytics
+Machine Learning
+
+3. Instructors and Courses
+John Miller    - SQL Basics
+Sarah Lee      - Python Fundamentals
+David Wilson   - Cloud Computing
+Emma Thomas    - NULL
+
+4. Courses Without Instructor
+Data Analytics
+Machine Learning
+
+5. Students and Enrollment Information
+Alice Johnson  - 1 - 101
+Bob Smith      - 2 - 102
+Charlie Brown  - 3 - 101
+Diana Prince   - 4 - 104
+
+6. Students Not Enrolled
+Ethan Hunt
+
+7. FULL OUTER JOIN Result
+Alice Johnson  - 1 - 101
+Bob Smith      - 2 - 102
+Charlie Brown  - 3 - 101
+Diana Prince   - 4 - 104
+Ethan Hunt     - NULL
+
+8. Courses Never in Enrollments
+Data Analytics
+Machine Learning
+
+9. Instructors and Courses
+John Miller    - SQL Basics
+Sarah Lee      - Python Fundamentals
+David Wilson   - Cloud Computing
+Emma Thomas    - NULL
+NULL           - Data Analytics
+NULL           - Machine Learning
+
+10. Student Course Instructor Report
+Alice Johnson  - SQL Basics           - John Miller
+Bob Smith      - Python Fundamentals  - Sarah Lee
+Charlie Brown  - SQL Basics           - John Miller
+Diana Prince   - Cloud Computing      - David Wilson
+Ethan Hunt     - NULL                 - NULL
+
+Bonus Challenge
+Every student matched with every course using CROSS JOIN.
