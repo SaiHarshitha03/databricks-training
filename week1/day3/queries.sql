@@ -1,168 +1,107 @@
--- Question 41
-SELECT name
-FROM Employee
-WHERE salary = (SELECT MAX(salary) FROM Employee);
+1. Display all students and the courses they are enrolled in. Include students who are not enrolled in any course.
 
--- Question 42
-SELECT name
-FROM Employee
-WHERE salary > (SELECT AVG(salary) FROM Employee);
+SELECT s.student_name, c.course_name
+FROM students s
+LEFT JOIN enrollments e
+ON s.student_id = e.student_id
+LEFT JOIN courses c
+ON e.course_id = c.course_id;
 
--- Question 43
-SELECT name
-FROM Employee
-WHERE department_id IN (
-SELECT department_id
-FROM Department
-WHERE name = 'IT'
-);
 
--- Question 44
-SELECT name
-FROM Employee
-WHERE EXISTS (
-SELECT *
-FROM Project
-WHERE Project.department_id = Employee.department_id
-);
+2. Find all courses that currently have no students enrolled.
 
--- Question 45
-SELECT name
-FROM Employee
-WHERE salary = (
-SELECT MIN(salary)
-FROM Employee
-);
+SELECT c.course_name
+FROM courses c
+LEFT JOIN enrollments e
+ON c.course_id = e.course_id
+WHERE e.student_id IS NULL;
 
--- Question 46
-SELECT department_id, AVG(salary) AS avg_salary
-FROM Employee
-GROUP BY department_id;
 
--- Question 47
-SELECT name
-FROM Employee
-WHERE age > (
-SELECT AVG(age)
-FROM Employee
-);
+3. Display all instructors and the courses they teach, including instructors who are not assigned to any course.
 
--- Question 48
-SELECT e.name, d.name AS department_name
-FROM Employee e
-JOIN Department d
-ON e.department_id = d.department_id
-WHERE e.salary > 50000;
+SELECT i.instructor_name, c.course_name
+FROM instructors i
+LEFT JOIN courses c
+ON i.instructor_id = c.instructor_id;
 
--- Question 49
-SELECT d.name, COUNT(e.emp_id) AS employee_count
-FROM Department d
-LEFT JOIN Employee e
-ON d.department_id = e.department_id
-GROUP BY d.name;
 
--- Question 50
-SELECT p.name AS project_name, d.name AS department_name
-FROM Project p
-JOIN Department d
-ON p.department_id = d.department_id;
+4. Find all courses that do not have an instructor assigned.
 
--- Question 51
-SELECT name
-FROM Employee
-WHERE salary < (
-SELECT AVG(salary)
-FROM Employee
-);
+SELECT course_name
+FROM courses
+WHERE instructor_id IS NULL;
 
--- Question 52
-SELECT name, salary
-FROM Employee
-WHERE salary = (
-SELECT MAX(salary)
-FROM Employee
-WHERE department_id = Employee.department_id
-);
 
--- Question 53
-SELECT d.name AS department_name, SUM(e.salary) AS total_salary
-FROM Department d
-JOIN Employee e
-ON d.department_id = e.department_id
-GROUP BY d.name;
+5. Display all students and enrollment information using a RIGHT JOIN.
 
--- Question 54
-SELECT name
-FROM Employee
-WHERE department_id = (
-SELECT department_id
-FROM Department
-WHERE name = 'HR'
-);
+SELECT s.student_name, e.course_id
+FROM students s
+RIGHT JOIN enrollments e
+ON s.student_id = e.student_id;
 
--- Question 55
-SELECT name
-FROM Employee
-WHERE hire_date = (
-SELECT MIN(hire_date)
-FROM Employee
-);
 
--- Question 56
-SELECT COUNT(*) AS total_employees
-FROM Employee;
+6. Find students who are not enrolled in any course.
 
--- Question 57
-SELECT department_id, COUNT(*) AS employee_count
-FROM Employee
-GROUP BY department_id;
+SELECT s.student_name
+FROM students s
+LEFT JOIN enrollments e
+ON s.student_id = e.student_id
+WHERE e.course_id IS NULL;
 
--- Question 58
-SELECT name
-FROM Employee
-WHERE age = (
-SELECT MAX(age)
-FROM Employee
-);
 
--- Question 59
-SELECT name, salary
-FROM Employee
-ORDER BY salary DESC;
+7. Use a FULL OUTER JOIN to display all students and enrollments, including unmatched rows from both tables.
 
--- Question 60
-SELECT name, hire_date
-FROM Employee
-ORDER BY hire_date ASC;
+SELECT s.student_name, e.course_id
+FROM students s
+LEFT JOIN enrollments e
+ON s.student_id = e.student_id
+UNION
+SELECT s.student_name, e.course_id
+FROM students s
+RIGHT JOIN enrollments e
+ON s.student_id = e.student_id;
 
--- Question 61
-SELECT d.name AS department_name, AVG(e.salary) AS average_salary
-FROM Department d
-JOIN Employee e
-ON d.department_id = e.department_id
-GROUP BY d.name;
 
--- Question 62
-SELECT p.name AS project_name, d.name AS department_name
-FROM Project p
-JOIN Department d
-ON p.department_id = d.department_id;
+8. Find all courses that have never appeared in the enrollments table.
 
--- Question 63
-SELECT name
-FROM Employee
-WHERE department_id IN (
-SELECT department_id
-FROM Project
-);
+SELECT c.course_name
+FROM courses c
+LEFT JOIN enrollments e
+ON c.course_id = e.course_id
+WHERE e.course_id IS NULL;
 
--- Question 64
-SELECT name
-FROM Employee
-WHERE salary > 55000;
 
--- Question 65
-SELECT department_id, MAX(salary) AS highest_salary
-FROM Employee
-GROUP BY department_id;
+9. Display all instructors and courses using a FULL OUTER JOIN and identify unmatched rows.
 
+SELECT i.instructor_name, c.course_name
+FROM instructors i
+LEFT JOIN courses c
+ON i.instructor_id = c.instructor_id
+UNION
+SELECT i.instructor_name, c.course_name
+FROM instructors i
+RIGHT JOIN courses c
+ON i.instructor_id = c.instructor_id;
+
+
+10. Create a report showing: student name, course name, and instructor name. Include rows even if course or instructor information is missing.
+
+SELECT s.student_name,
+       c.course_name,
+       i.instructor_name
+FROM students s
+LEFT JOIN enrollments e
+ON s.student_id = e.student_id
+LEFT JOIN courses c
+ON e.course_id = c.course_id
+LEFT JOIN instructors i
+ON c.instructor_id = i.instructor_id;
+
+
+Bonus Challenge
+
+List every student and every course, even if there is no enrollment relationship between them.
+
+SELECT s.student_name, c.course_name
+FROM students s
+CROSS JOIN courses c;
