@@ -1,26 +1,34 @@
-# Week 2 - Day 1: SQL Practice
+# Week 2 - Day 1: SQL Joins and Self Joins
 
 ## Objective
 
-To strengthen SQL skills by practicing advanced queries and improving understanding of database concepts through hands-on exercises.
+To practice SQL joins and understand relationships between employees, departments, projects, salaries, and contacts using a relational database.
 
 ## Topics Covered
 
-* Joins
-* Self Joins
-* Subqueries
-* Aggregate Functions
-* GROUP BY & HAVING
-* Window Functions
-* Data Analysis Queries
+* INNER JOIN
+* LEFT JOIN
+* RIGHT JOIN
+* SELF JOIN
+* CROSS JOIN
+* Multi-Table Joins
+* Employee-Manager Relationships
+
+## Database Tables
+
+* Employees
+* Departments
+* Projects
+* Salary
+* Contacts
 
 ## Tasks Completed
 
-* Created and populated database tables.
-* Executed SQL queries on multiple related tables.
-* Retrieved and analyzed data using joins and subqueries.
-* Generated reports using aggregate functions and filtering conditions.
-* Practiced solving real-world database problems.
+* Created and populated multiple related tables.
+* Retrieved employee and department information.
+* Mapped employees to their managers using self joins.
+* Generated project allocation reports.
+* Combined data from multiple tables using join operations.
 
 ## Tools Used
 
@@ -29,15 +37,15 @@ To strengthen SQL skills by practicing advanced queries and improving understand
 
 ## Outputs Achieved
 
-* Generated employee, department, and project reports.
-* Retrieved meaningful insights from relational data.
-* Improved query optimization and problem-solving skills.
-* Practiced advanced SQL concepts through hands-on implementation.
+* Employee-Department Reports
+* Employee-Manager Hierarchy
+* Project Assignment Details
+* Multi-Table Data Analysis
 
 ## Learning Outcome
 
-Gained practical experience in writing SQL queries, working with multiple tables, and analyzing data using advanced database techniques.
+Gained hands-on experience with SQL joins, self joins, and relational database concepts. Improved skills in querying and analyzing data across multiple interconnected tables.
 
 ## Summary
 
-Successfully completed Week 2 Day 1 SQL practice, enhancing SQL fundamentals and improving proficiency in data retrieval, analysis, and reporting.
+Successfully implemented and practiced various SQL join operations, strengthening understanding of table relationships and real-world database querying techniques.
