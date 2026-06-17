@@ -1,61 +1,71 @@
-# Week 1 - Day 3
+# SQL Joins Assignment
 
-## Overview
+## Objective
 
-Day 3 focused on practicing advanced SQL concepts such as subqueries, correlated queries, and complex JOIN operations.
+To understand and implement different types of SQL JOIN operations for combining data from multiple related tables. This assignment focuses on retrieving matched and unmatched records using various join techniques and generating meaningful reports from relational databases.
 
-The queries were executed using DB-Fiddle with Employee, Department, and Project tables.
+## Tools Used
 
----
+* MySQL
+* DB-Fiddle / SQL Compiler
 
-## Files Included
+## Topics Covered
 
-```text id="r7x1vn"
-day3/
-│
-├── README.md
-├── output.txt
-├── queries.sql
-└── schema.sql
-```
+* LEFT JOIN
+* RIGHT JOIN
+* FULL OUTER JOIN
+* CROSS JOIN
+* UNION
+* NULL Filtering
+* Multi-Table Joins
 
----
+## Tasks Performed
 
-## 🛠 Tools Used
+* Retrieved student and course enrollment details using JOIN operations.
+* Identified courses without student enrollments.
+* Displayed instructor and course mappings.
+* Implemented LEFT JOIN and RIGHT JOIN queries.
+* Simulated FULL OUTER JOIN using the UNION operator.
+* Generated reports by combining data from multiple tables.
+* Practiced CROSS JOIN operations to create all possible record combinations.
+* Applied NULL filtering to identify unmatched records.
 
-* SQL
-* DB-Fiddle
-* GitHub
+## Concepts Practiced
 
----
+### LEFT JOIN
 
-## Topics Practiced
+* Retrieved all records from the left table and matching records from the right table.
+* Identified records with no corresponding matches.
 
-* Subqueries
-* Correlated queries
-* Complex JOINs
-* Aggregate functions
-* Nested queries
-* EXISTS and IN operators
+### RIGHT JOIN
 
----
+* Retrieved all records from the right table and matching records from the left table.
+* Analyzed unmatched records from the left table.
+
+### FULL OUTER JOIN
+
+* Combined results of LEFT JOIN and RIGHT JOIN using UNION.
+* Displayed all matched and unmatched records from both tables.
+
+### CROSS JOIN
+
+* Generated Cartesian products between tables.
+* Explored all possible row combinations.
+
+### UNION
+
+* Merged results from multiple queries.
+* Used to simulate FULL OUTER JOIN functionality in MySQL.
 
 ## Key Learnings
 
-* Learned how subqueries work inside SQL statements.
-* Practiced correlated queries for row-wise comparisons.
-* Understood advanced JOIN operations.
-* Improved problem-solving using nested queries.
+* Developed a strong understanding of SQL JOIN operations.
+* Learned how to combine data from multiple related tables.
+* Identified matched and unmatched records efficiently.
+* Understood the practical use of NULL filtering in joins.
+* Implemented FULL OUTER JOIN behavior using UNION.
+* Improved database querying and report-generation skills.
 
----
+## Outcome
 
-## Outputs
-
-Query outputs are stored in `output.txt`.
-
----
-
-## Status
-
-Day 3 tasks completed successfully.
-
+Successfully implemented various SQL JOIN operations, including LEFT JOIN, RIGHT JOIN, FULL OUTER JOIN, and CROSS JOIN. Gained hands-on experience in retrieving, analyzing, and combining data from multiple related tables, strengthening relational database concepts and SQL query-writing skills.
