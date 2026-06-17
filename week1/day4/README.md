@@ -1,66 +1,40 @@
-# Week 1 - Day 4
+# Week 1 - Day 3: Advanced SQL Analytics & Window Function Equivalents
 
-## Overview
+## Objective
 
-Day 4 focused on practicing SQL queries using different clauses and operators such as SELECT, WHERE, GROUP BY, HAVING, DISTINCT, TOP, LIKE, BETWEEN, and logical operators.
+To practice advanced SQL queries for data analysis, ranking, cumulative calculations, and business reporting using MySQL.
 
-The queries were executed using the Employees table in DB-Fiddle.
+## Topics Covered
 
----
+* ROW_NUMBER(), RANK(), DENSE_RANK() Equivalents
+* Running Totals & Cumulative Sales
+* Moving Averages
+* Employee & Department Analytics
+* Customer Spending Analysis
+* Correlated and Nested Subqueries
+* Sales Trend Analysis
 
-## Files Included
+## Tasks Completed
 
-```text
-day4/
-│
-├── README.md
-├── output.txt
-├── queries.sql
-└── schema.sql
-```
+* Implemented 30 advanced SQL analytical queries.
+* Ranked employees and customers based on performance metrics.
+* Calculated running totals, moving averages, and cumulative sales.
+* Analyzed department salaries and payroll.
+* Generated monthly sales trend reports.
+* Worked with employee and order datasets.
 
----
+## Tools Used
 
-## 🛠 Tools Used
-
-* SQL
-* DB-Fiddle
-* GitHub
-
----
-
-## Topics Practiced
-
-* SELECT statements
-* WHERE clause
-* GROUP BY
-* HAVING clause
-* DISTINCT keyword
-* TOP keyword
-* Comparison operators
-* Logical operators
-* IN and NOT IN
-* BETWEEN operator
-* LIKE operator
-
----
+* MySQL
+* DB-Fiddle / SQL Compiler
 
 ## Key Learnings
 
-* Learned how to filter records using WHERE conditions.
-* Practiced grouping data using GROUP BY and HAVING.
-* Understood the usage of DISTINCT and TOP clauses.
-* Improved query writing using logical and comparison operators.
-* Practiced pattern matching using LIKE operator.
+* Learned advanced SQL analytical techniques.
+* Improved understanding of ranking and aggregation concepts.
+* Practiced correlated subqueries and business reporting queries.
+* Developed skills in sales and performance analysis.
 
----
+## Outcome
 
-## Outputs
-
-Query outputs are stored in `output.txt`.
-
----
-
-## Status
-
-Day 4 tasks completed successfully.
+Successfully completed advanced SQL analytics exercises and gained hands-on experience in reporting, ranking, trend analysis, and business intelligence queries.
