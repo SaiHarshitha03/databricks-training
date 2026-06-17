@@ -1,62 +1,43 @@
-# Week 1 - Day 5
+# Week 1 - Day 4: College Management System SQL Practice
 
-## Overview
+## Objective
 
-Day 3 focused on practicing SQL JOIN operations such as LEFT JOIN, RIGHT JOIN, and FULL OUTER JOIN using a simple online learning platform database.
+To practice SQL queries using a College Management System database and improve skills in data retrieval, joins, aggregation, subqueries, and window functions.
 
-The queries were executed using DB-Fiddle with Students, Courses, Instructors, and Enrollments tables.
+## Topics Covered
 
----
+* Joins (INNER, LEFT)
+* Aggregate Functions
+* GROUP BY & HAVING
+* Subqueries
+* Window Functions
 
-## Files Included
+  * ROW_NUMBER()
+  * RANK()
+  * DENSE_RANK()
+  * NTILE()
+  * LAG()
+  * LEAD()
+  * CUME_DIST()
+  * PERCENT_RANK()
+* Department-wise and Student-wise Analysis
 
-```text
-day3/
-│
-├── README.md
-├── output.txt
-├── queries.sql
-└── schema.sql
-```
+## Tasks Completed
 
----
+* Created and queried CMS database tables.
+* Executed 50+ SQL queries covering basic, intermediate, and advanced concepts.
+* Generated student, staff, subject, and marks reports.
+* Performed ranking, trend analysis, and performance evaluation using window functions.
 
-## 🛠 Tools Used
+## Tools Used
 
-* SQL
-* DB-Fiddle
-* GitHub
+* MySQL 8
+* DB-Fiddle / SQL Compiler
 
----
+## Learning Outcome
 
-## Topics Practiced
+Gained hands-on experience in SQL querying, data analysis, joins, subqueries, and advanced window functions for real-world database reporting and analytics.
 
-* LEFT JOIN
-* RIGHT JOIN
-* FULL OUTER JOIN
-* CROSS JOIN
-* Handling NULL values
-* Matching and unmatched records
-* Multi-table joins
+## Summary
 
----
-
-## Key Learnings
-
-* Learned how LEFT JOIN includes unmatched rows from the left table.
-* Practiced RIGHT JOIN for retrieving unmatched right table records.
-* Understood FULL OUTER JOIN operations.
-* Improved knowledge of combining multiple tables using joins.
-* Learned how to identify missing relationships in database tables.
-
----
-
-## Outputs
-
-Query outputs are stored in `output.txt`.
-
----
-
-## Status
-
-Day 3 tasks completed successfully.
+Successfully completed 50 SQL practice queries on a College Management System database, strengthening SQL fundamentals and advanced analytical query-writing skills.
