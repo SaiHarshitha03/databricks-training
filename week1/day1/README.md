@@ -1,60 +1,46 @@
 # Week 1 - Day 1
 
-## Overview
+## Objective
 
-Today I learned the basics of SQL and practiced different SQL queries using Employee, Department, and Project tables.
+To learn and practice basic to intermediate SQL queries using DB Fiddle and gain hands-on experience in database operations.
 
-The tables were created using the provided `schema.sql` file and queries were executed in DB-Fiddle. Practice questions were taken from the SQL practice sheet 
+## Platform Used
 
----
+* **DB Fiddle** – Used for writing, executing, and testing SQL queries.
 
-## Files Included
+## Topics Covered
 
-* `schema.sql` → Table creation queries
-* `queries.sql` → SQL practice queries and solutions
-* `output.txt` → Query outputs
-* `README.md` → Day 1 documentation
+* Basic Queries (`SELECT`, `WHERE`)
+* String Matching (`LIKE`, Pattern Matching)
+* Date Queries (`YEAR`, `MONTH`, `DATE` Functions)
+* Aggregate Functions (`SUM`, `AVG`, `MIN`, `MAX`, `COUNT`)
+* `GROUP BY` and `HAVING`
+* `ORDER BY` (Sorting Data)
+* Joins (`INNER JOIN`, `LEFT JOIN`)
+* Nested Queries
+* Correlated Queries
 
----
+## Tasks Completed
 
-## Tools Used
+* Created database tables using the provided `datacreation.sql` script.
+* Practiced and executed **65 SQL queries** covering various SQL concepts.
+* Performed data filtering, grouping, sorting, and aggregation.
+* Worked with multiple related tables:
 
-* SQL
-* DB-Fiddle
-* GitHub
-
----
-
-## Topics Practiced
-
-* SELECT queries
-* WHERE clause
-* LIKE operator
-* Aggregate functions
-* GROUP BY
-* HAVING clause
-* ORDER BY
-* JOIN queries
-* Nested queries
-
----
+  * Employee
+  * Department
+  * Project
+* Applied joins and subqueries to solve real-world database problems.
 
 ## Key Learnings
 
-* Learned how to retrieve and filter data from tables.
-* Practiced writing SQL queries.
-* Understood joins and aggregate functions.
-* Learned basics of nested and correlated queries.
+* Developed a strong understanding of SQL query writing.
+* Learned how to retrieve and manipulate data efficiently.
+* Understood relationships between tables and database normalization concepts.
+* Used joins to combine data from multiple tables.
+* Applied aggregate functions and grouping techniques for data analysis.
+* Implemented nested and correlated subqueries for complex requirements.
 
----
+## Summary
 
-## Outputs
-
-Query outputs are saved in `output.txt`.
-
----
-
-## Status
-
-Day 1 tasks completed successfully.
-
+Successfully practiced and implemented **65 SQL queries** ranging from basic to advanced levels. Gained hands-on experience in database querying, data analysis, joins, aggregation, and subquery techniques, strengthening overall SQL fundamentals and problem-solving skills.
