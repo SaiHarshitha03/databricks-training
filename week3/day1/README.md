@@ -1,31 +1,37 @@
-# WEEK 3 – DAY 1  
-# ROW_NUMBER() FUNCTIONS IN MYSQL
+# 📘 Week 3 – Day 1: ROW_NUMBER() Window Function in MySQL
 
-This project demonstrates the use of the `ROW_NUMBER()` window function in MySQL using employee management examples. The queries help assign unique sequential numbers to rows based on different sorting and grouping conditions.
+This project demonstrates the use of the **`ROW_NUMBER()`** window function in MySQL using practical employee management examples. It covers ranking, sorting, and department-wise numbering to help understand analytical SQL queries.
 
 ---
 
-# What is ROW_NUMBER()?
+## 📖 Overview
 
-`ROW_NUMBER()` is a window function that assigns a unique sequential number to each row in a result set.
+`ROW_NUMBER()` is a window function that assigns a **unique sequential number** to each row in a result set based on the specified ordering.
 
-## Syntax
+### Syntax
 
 ```sql
 ROW_NUMBER() OVER (
     ORDER BY column_name
-)
+);
 ```
 
-The numbering starts from 1 and increases by 1 for each row.
+To generate row numbers within groups:
+
+```sql
+ROW_NUMBER() OVER (
+    PARTITION BY column_name
+    ORDER BY column_name
+);
+```
 
 ---
 
-# Topics Covered
+## 📚 Topics Covered
 
-## 1. Row Number Based on Highest Salary
+### 1️⃣ Rank Employees by Salary
 
-Assign unique row numbers to employees based on salary in descending order.
+Assign row numbers based on highest salary.
 
 ```sql
 SELECT emp_name,
@@ -38,9 +44,9 @@ FROM employees;
 
 ---
 
-## 2. Department-wise Salary Row Number
+### 2️⃣ Department-wise Salary Ranking
 
-Assign row numbers separately within each department based on highest salary.
+Assign row numbers separately for each department.
 
 ```sql
 SELECT emp_name,
@@ -55,9 +61,9 @@ FROM employees;
 
 ---
 
-## 3. Latest Joining Date Row Number
+### 3️⃣ Rank Employees by Joining Date
 
-Assign row numbers based on the most recent joining date.
+Assign row numbers based on the latest joining date.
 
 ```sql
 SELECT emp_name,
@@ -70,9 +76,9 @@ FROM employees;
 
 ---
 
-## 4. Department-wise Earliest Joining Date
+### 4️⃣ Department-wise Joining Order
 
-Assign row numbers within departments based on earliest joining dates.
+Assign row numbers within each department based on the earliest joining date.
 
 ```sql
 SELECT emp_name,
@@ -87,58 +93,68 @@ FROM employees;
 
 ---
 
-# SQL Concepts Used
+## 🛠 SQL Concepts Used
 
-```sql
-ROW_NUMBER()
-OVER()
-PARTITION BY
-ORDER BY
-```
+- ROW_NUMBER()
+- OVER()
+- PARTITION BY
+- ORDER BY
+- Window Functions
 
 ---
 
-# Real-Time Use Cases
+## 💼 Real-World Applications
 
-- Employee ranking
+- Employee salary ranking
+- Department-wise reporting
+- HR analytics
 - Payroll analysis
-- Department-wise employee ordering
-- HR reporting
-- Generating serial numbers in reports
-- Employee joining-date analysis
+- Employee performance reports
+- Generating serial numbers
+- Joining-date analysis
 
 ---
 
-# Recommended Database
+## 💻 Requirements
 
 - MySQL 8.0+
-- MariaDB
+- MariaDB (with Window Function support)
 
 ---
 
-# Suitable For
+## 🎯 Suitable For
 
 - SQL Beginners
-- Window Function Practice
-- Placement Preparation
 - DBMS Lab Practice
+- Placement Preparation
 - Interview Preparation
+- Window Function Practice
+- Data Analytics Learners
 
 ---
 
-# Learning Outcomes
+## 📖 Learning Outcomes
 
-By completing this project, you will learn:
+After completing this project, you will be able to:
 
-- How to use `ROW_NUMBER()`
-- Working with window functions
-- Sorting rows using `ORDER BY`
-- Group-wise numbering using `PARTITION BY`
-- Employee ranking and reporting techniques
-- SQL analytical query writing
+- Understand the `ROW_NUMBER()` window function.
+- Generate sequential row numbers.
+- Use `PARTITION BY` for group-wise ranking.
+- Apply `ORDER BY` within window functions.
+- Write analytical SQL queries.
+- Perform employee ranking and reporting.
 
 ---
 
-# Project Goal
+## 🚀 Project Objective
 
-The goal of this project is to provide hands-on practice with the `ROW_NUMBER()` window function using real-world employee datasets. It helps learners understand ranking, ordering, and department-wise analysis commonly used in business reporting and analytics.
+The objective of this project is to provide hands-on practice with the **`ROW_NUMBER()`** window function using real-world employee datasets. It helps learners understand ranking, ordering, and department-wise analysis commonly used in business reporting, HR analytics, and data analysis.
+
+---
+
+## 👨‍💻 Author
+
+**Adapa Sai Harshitha**
+
+B.Tech – Artificial Intelligence & Data Science  
+Vishnu Institute of Technology
