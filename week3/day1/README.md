@@ -155,6 +155,3 @@ The objective of this project is to provide hands-on practice with the **`ROW_NU
 ## 👨‍💻 Author
 
 **Adapa Sai Harshitha**
-
-B.Tech – Artificial Intelligence & Data Science  
-Vishnu Institute of Technology
